@@ -145,7 +145,22 @@
     </div>
    
     
-
+    <script>
+        function displayTime (){
+        const date = new Date();
+    
+        const h = document.getElementById("h");
+        h.innerHTML = date.getHours();
+    
+        const m = document.getElementById("m");
+        m.innerHTML = date.getMinutes();
+    
+        const s = document.getElementById("s");
+        s.innerHTML = date.getSeconds();
+        }
+        setInterval(displayTime, 1000);
+    
+     </script> 
      
  </body>
  </html>
